@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+h2{
+  animation: type 8s steps(40, end); 
+}
+
+.postsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.singlePost{
+  width: 30%;
+  background: antiquewhite;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
