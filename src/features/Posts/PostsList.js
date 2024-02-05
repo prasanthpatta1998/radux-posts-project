@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchPosts } from "./postslice";
 import SinglePost from "./SinglePost";
 import "../../App.css";
+import Basic from "./form";
 
 const PostsList = () => {
   const post = useSelector((state) => state.post);
@@ -15,6 +16,7 @@ const PostsList = () => {
   }, []);
   return (
     <div>
+      {/* <Basic/> */}
       <h2>PostsList</h2>
       <div className="postsContainer">
         {post.loading ? <h3>...Loading</h3> : null}
