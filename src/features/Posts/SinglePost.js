@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import "../../App.css"
 import TimeAgo from "./TimeAgo";
 import ReactionButtons from "./ReactionButtons";
@@ -16,4 +16,4 @@ const SinglePost = ({post}) => {
   );
 };
 
-export default SinglePost;
+export default memo(SinglePost);
